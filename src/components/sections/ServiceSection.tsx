@@ -8,7 +8,7 @@ import { serviceCardsData } from "@/constants/serviceSection";
 
 const ServiceSection = () => {
   return (
-    <section className="relative px-[2rem] pb-[32rem] xl:px-[0rem]">
+    <section className="relative px-[2rem] pb-[10rem] lg:pb-[32rem] xl:px-[0rem]">
       <div className="absolute bottom-[9.5rem] left-0 w-full">
         <Image
           src={bgLine}
@@ -20,7 +20,10 @@ const ServiceSection = () => {
       </div>
 
       <div className="mx-auto flex max-w-[135.2rem] flex-col gap-[1.8rem] xl:flex-row">
-        <div className="service-card-gradient relative z-[1] h-[50rem] w-full overflow-hidden md:h-[84.6rem] md:min-w-[62.9rem]">
+        <div
+          data-aos="fade-up"
+          className="service-card-gradient relative z-[1] h-[50rem] w-full overflow-hidden md:h-[84.6rem] md:min-w-[62.9rem]"
+        >
           <div className="absolute top-[-6rem] left-[-6rem] z-[-1] size-[30rem] bg-[#1534B699] blur-[100px]" />
 
           <div className="absolute right-0 bottom-[-25rem] z-[-1] size-[30rem] bg-[#DFDFDF99] blur-[100px]" />
@@ -78,22 +81,24 @@ const ServiceSection = () => {
 
         <div className="grid grid-cols-1 gap-x-[1.5rem] gap-y-[3rem] md:grid-cols-2">
           {serviceCardsData.map((item, idx) => (
-            <div key={idx} className="service-card">
-              <Image
-                src={item.icon}
-                alt="Pencil Icon"
-                width={52}
-                height={52}
-                className="size-[4.8rem] md:size-[5.2rem]"
-              />
+            <div data-aos="fade-up" data-aos-delay={idx * 100} key={idx}>
+              <div className="service-card">
+                <Image
+                  src={item.icon}
+                  alt="Pencil Icon"
+                  width={52}
+                  height={52}
+                  className="size-[4.8rem] md:size-[5.2rem]"
+                />
 
-              <h4 className="mt-[2rem] mb-[6.2rem] text-[2.8rem] leading-[3.8rem] font-semibold tracking-[-0.02em] md:text-[3.4rem] md:leading-[4.8rem]">
-                {item.title}
-              </h4>
+                <h4 className="mt-[2rem] mb-[6.2rem] text-[2.8rem] leading-[3.8rem] font-semibold tracking-[-0.02em] md:text-[3.4rem] md:leading-[4.8rem]">
+                  {item.title}
+                </h4>
 
-              <p className="text-[1.8rem] leading-[2.6rem] text-[#333333]">
-                {item.description}
-              </p>
+                <p className="text-[1.8rem] leading-[2.6rem] text-[#333333]">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

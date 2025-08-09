@@ -18,9 +18,14 @@ const AboutSection = () => {
       </div>
 
       <div className="relative z-10 mx-auto flex w-full max-w-[120.3rem] flex-col items-center text-center xl:block xl:text-left">
-        <AboutBadge />
+        <div data-aos="fade-up">
+          <AboutBadge />
+        </div>
 
-        <h5 className="mt-[3rem] mb-[2rem] max-w-[99rem] text-[2rem] leading-[3rem] font-semibold tracking-[-0.02em] text-[#333333] md:text-[2.8rem] md:leading-[3.6rem] lg:text-[3.4rem] lg:leading-[4.8rem]">
+        <h5
+          data-aos="fade-up"
+          className="mt-[3rem] mb-[2rem] max-w-[99rem] text-[2rem] leading-[3rem] font-semibold tracking-[-0.02em] text-[#333333] md:text-[2.8rem] md:leading-[3.6rem] lg:text-[3.4rem] lg:leading-[4.8rem]"
+        >
           <span className="text-[#EE8D00]">Creative Pixels</span> is an
           independent web design and development agency based in{" "}
           <span className="text-[#FF37B3]">Manchester</span> — crafting digital
@@ -30,11 +35,16 @@ const AboutSection = () => {
           pixel-perfect work.
         </h5>
 
-        <h5 className="mb-[2rem] text-[2rem] leading-[3rem] font-semibold tracking-[-0.02em] text-[#333333] md:text-[2.8rem] md:leading-[3.6rem] lg:text-[3.4rem] lg:leading-[4.8rem]">
+        <h5
+          data-aos="fade-up"
+          className="mb-[2rem] text-[2rem] leading-[3rem] font-semibold tracking-[-0.02em] text-[#333333] md:text-[2.8rem] md:leading-[3.6rem] lg:text-[3.4rem] lg:leading-[4.8rem]"
+        >
           We work with clients in 🇬🇧 🇦🇺 🇺🇸
         </h5>
 
-        <AboutButton />
+        <div data-aos="fade-up">
+          <AboutButton />
+        </div>
       </div>
     </section>
   );

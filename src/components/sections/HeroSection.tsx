@@ -7,7 +7,7 @@ import { logoPopupsData } from "@/constants/heroSection";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden rounded-br-[5rem] rounded-bl-[5rem] px-[2rem] md:h-[79rem] xl:px-[0rem]">
+    <section className="relative min-h-screen w-full overflow-hidden rounded-br-[5rem] rounded-bl-[5rem] px-[2rem] md:h-[79rem] md:h-screen xl:px-[0rem]">
       <Image
         src={heroBg}
         alt="Hero Background"
@@ -16,7 +16,7 @@ const HeroSection = () => {
         priority
       />
 
-      <div className="relative z-10 flex h-full w-full flex-col items-center justify-end gap-[3rem] pb-[2rem] md:gap-[5.9rem] md:pb-[4rem]">
+      <div className="relative z-10 flex h-full w-full flex-col items-center justify-end gap-[3rem] pt-[15rem] pb-[2rem] md:gap-[5.9rem] md:pt-[0rem] md:pb-[4rem]">
         <div className="flex max-w-[106.5rem] flex-col items-center gap-[1.8rem] text-center md:gap-[2.7rem]">
           <BookBadge />
 

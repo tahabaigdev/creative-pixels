@@ -7,7 +7,7 @@ import { logoPopupsData } from "@/constants/heroSection";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden rounded-br-[5rem] rounded-bl-[5rem] px-[2rem] md:h-[79rem] md:h-screen xl:px-[0rem]">
+    <section className="relative min-h-screen w-full overflow-hidden rounded-br-[5rem] rounded-bl-[5rem] px-[2rem] md:h-[79rem] md:min-h-auto xl:px-[0rem]">
       <Image
         src={heroBg}
         alt="Hero Background"

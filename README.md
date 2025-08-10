@@ -13,7 +13,7 @@ Live Preview: [Click Here](https://cp-task.vercel.app/)
 
 ## 📌 Implemented Sections
 
-- **Header with Navigation & Interactions**
+- **Header with Navigation & Dropdown with Filter Tab**
 - **Hero Section**
 - **About Section**
 - **Service Section**

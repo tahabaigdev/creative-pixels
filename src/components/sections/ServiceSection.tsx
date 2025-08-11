@@ -52,7 +52,6 @@ const ServiceSection = () => {
               height={209}
               width={219}
               priority
-              style={{ height: "auto", width: "100%" }} // maintains aspect ratio
             />
           </div>
 
@@ -63,7 +62,6 @@ const ServiceSection = () => {
               height={109}
               width={298}
               priority
-              style={{ height: "auto", width: "100%" }} // maintains aspect ratio
             />
           </div>
 
@@ -74,7 +72,6 @@ const ServiceSection = () => {
               height={247}
               width={393}
               priority
-              style={{ height: "auto", width: "100%" }} // maintains aspect ratio
             />
           </div>
         </div>
